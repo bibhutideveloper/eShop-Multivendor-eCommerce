@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a, fa-icon{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(151, 29, 159);
+}
+fa-icon{
+    padding: 3px 6px;
+}
+
+form{
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px 0;
+    gap: 20px;
+}
+
+form p{
+    font-size: 13px;
+}
+form p a{
+    cursor: pointer;
+    color: rgb(142, 22, 175);
+}
+
+input, button{
+    padding: 10px;
+}
+
+.errorMsg{
+    color: red;
+}
+.successMsg{
+    color: green;
+}

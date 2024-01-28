@@ -1,0 +1,48 @@
+{
+  "seller": [
+    {
+      "id": "bb0b",
+      "name": "Bibhuti",
+      "email": "bibhuti@gmail.com",
+      "password": "123"
+    }
+  ],
+  "products": [
+    {
+      "name": "HP Pavilion 8GB DDR4 RAM 512GB SSD",
+      "price": "89000",
+      "color": "black",
+      "category": "laptop",
+      "description": "nice laptop",
+      "image": "https://m.media-amazon.com/images/I/71p-M3sPhhL.jpg",
+      "id": "e6cf"
+    },
+    {
+      "name": "Vintage Automatic",
+      "price": "4999",
+      "color": "Brown",
+      "category": "Luxury Watches",
+      "description": "Handcrafted automatic watch with a genuine leather strap, inspired by vintage designs.",
+      "image": "https://example.com/vintage_automatic.jpg",
+      "id": "4191"
+    },
+    {
+      "name": "Kids' Cartoon Watch",
+      "price": "300",
+      "color": "Pink",
+      "category": "Children's Watches",
+      "description": "Cute cartoon-themed watch for kids, featuring their favorite characters on the dial.",
+      "image": "https://example.com/kids_cartoon_watch.jpg",
+      "id": "730b"
+    },
+    {
+      "id": "cf94",
+      "name": "Smart Fitness Tracker",
+      "price": 180,
+      "color": "Purple",
+      "category": "Smartwatches",
+      "description": "Fitness-focused smartwatch with heart rate monitor, GPS, and sleep tracking features.",
+      "image": "https://example.com/smart_fitness_tracker.jpg"
+    }
+  ]
+}
