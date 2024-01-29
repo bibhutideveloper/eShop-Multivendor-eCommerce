@@ -1,0 +1,38 @@
+<section id="shop">
+    <div class="shop">
+        <div class="sidebar">
+            <div class="heading">
+                <h1>Filter</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="productGrid">
+            <div class="heading">
+                <h1>Products</h1>
+                <hr>
+            </div>
+            <div class="productContainer">
+                <div class="product" *ngFor="let product of productList">
+                    <div class="productImage">
+                        <a routerLink="/details/{{product.id}}">
+                            <img src="{{product.image}}" alt="">
+                        </a>
+                    </div>
+                    <div class="productInfo">
+                        <a routerLink="/details/{{product.id}}">
+                            <p class="productName">{{product.name}}</p>
+                        </a>
+                        <p class="productCategory">{{product.category}}</p>
+                    </div>
+                    <div class="productButtons">
+                        <a routerLink="/details/{{product.id}}">
+                            <button><i class="fa-regular fa-eye"></i></button>
+                        </a>
+                        <button><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

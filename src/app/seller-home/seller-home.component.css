@@ -1,20 +1,28 @@
-div{
-    width: calc(100% - 60px);
-    padding: 30px;
+.sellerHome{
+    width: calc(100% - 100px);
+    margin: auto;
+    padding: 70px 0 0 0;
 }
 
 table{
     border-collapse: collapse;
     text-align: left;
     width: 100%;
-    
 }
 table td, table th{
-    border: 1px solid black;
+    border: 1px solid var(--clr-primary);
     padding: 10px;
 }
 table img{
     height: 50px;
     width: 50px;
     object-fit: contain;
+    mix-blend-mode: multiply;
+}
+th{
+    background: var(--clr-primary);
+    color: white;
+}
+tr:nth-child(even){
+    background: var(--clr-lightbg);
 }

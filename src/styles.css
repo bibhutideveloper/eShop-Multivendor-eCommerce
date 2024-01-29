@@ -4,24 +4,71 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*colors*/
+:root{
+	--clr-primary: #502070;
+	--clr-secondary: #ff009d;
+	--clr-text: #7A7A7A;
+	--clr-accent:  #61CE70;
+	--clr-border: #c3c5c6;
+
+	--clr-white:  #FFFFFF;
+	--clr-black: #000000;
+
+	--clr-brown: #fff8f2;
+
+	--clr-lightbg: #f3f3f3;
+
+	--clr-info: #007bff;
+	--clr-success: #28a745;
+	--clr-danger: #dc3545;
+	--clr-warning: #ffc107;
+
+    --shadow: 0 5px 10px rgb(154 160 185 / 50%), 0 15px 40px rgb(166 173 201 / 50%);
+}
+
+section{
+    width: 100%;
+    padding: 50px 0;
+}
+section>div{
+    padding: 30px 0 0 0;
 }
 
 ul{
     list-style-type: none;
 }
-
-a, fa-icon{
+a{
     text-decoration: none;
-    cursor: pointer;
-    color: rgb(151, 29, 159);
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
-fa-icon{
-    padding: 3px 6px;
+a:hover{
+    color: var(--clr-secondary);
+}
+i{
+    cursor: pointer;
+}
+.fa-trash-can{
+    color: var(--clr-danger);
+}
+.fa-pen-to-square{
+    color: var(--clr-info);
 }
 
 form{
     text-align: center;
-    width: 300px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -37,8 +84,52 @@ form p a{
     color: rgb(142, 22, 175);
 }
 
-input, button{
+input, button, textarea{
     padding: 10px;
+    outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+table{
+    border: 1px solid var(--clr-primary);
+}
+.tableAction{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    cursor: pointer;
+    font-size: 15px;
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.btn{
+    padding: 10px 15px;
+    width: max-content;
+    color: white;
+    border-radius: 5px;
+}
+.btn-light{
+    background: var(--clr-secondary);
+}
+.btn-light:hover{
+    color: var(--clr-secondary);
+    background: white;
+}
+.btn-dark{
+    background: var(--clr-primary);
+}
+.btn-dark:hover{
+    color: var(--clr-primary);
+    background: white;
 }
 
 .errorMsg{
@@ -46,4 +137,95 @@ input, button{
 }
 .successMsg{
     color: green;
+}
+
+/* heading */
+.heading{
+    width: 100%;
+    padding-bottom: 20px;
+    color: var(--clr-primary);
+}
+.heading hr{
+    width: 120px;
+    border-radius: 50px;
+    height: 3px;
+    background-color: var(--clr-secondary);
+    border: 0;
+}
+.heading-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* product */
+.productContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+
+}
+.product{
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 70px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+.product:hover .productImage img{
+    transform: scale(1);
+}
+.productImage a{
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+}
+.productImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+    object-fit: contain;
+    transform: scale(0.9);
+}
+.productInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 5px;
+}
+.productName{
+    color: var(--clr-black);
+    font-weight: 600;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.productCategory{
+    color: var(--clr-text);
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.productButtons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.productButtons button{
+    border: 0;
+    border: 1px solid var(--clr-primary);
+    color: var(--clr-primary);
+    background: transparent;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.productButtons button:hover{
+    background: var(--clr-primary);
+    color: white;
 }

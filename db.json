@@ -10,7 +10,7 @@
   "products": [
     {
       "name": "HP Pavilion 8GB DDR4 RAM 512GB SSD",
-      "price": "89000",
+      "price": "99000",
       "color": "black",
       "category": "laptop",
       "description": "nice laptop",
@@ -23,7 +23,7 @@
       "color": "Brown",
       "category": "Luxury Watches",
       "description": "Handcrafted automatic watch with a genuine leather strap, inspired by vintage designs.",
-      "image": "https://example.com/vintage_automatic.jpg",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20211019/TmLn/616de76cf997ddf8f1da2a82/-1117Wx1400H-460901316-black-MODEL.jpg",
       "id": "4191"
     },
     {
@@ -32,17 +32,62 @@
       "color": "Pink",
       "category": "Children's Watches",
       "description": "Cute cartoon-themed watch for kids, featuring their favorite characters on the dial.",
-      "image": "https://example.com/kids_cartoon_watch.jpg",
+      "image": "https://www.getuscart.com/images/thumbs/0867995_kids-smart-watch-boys-toys-for-3-10-year-old-boy-touch-screen-smartwatch-with-dual-camera-educationa_550.jpeg",
       "id": "730b"
     },
     {
       "id": "cf94",
       "name": "Smart Fitness Tracker",
-      "price": 180,
+      "price": "1800",
       "color": "Purple",
       "category": "Smartwatches",
       "description": "Fitness-focused smartwatch with heart rate monitor, GPS, and sleep tracking features.",
-      "image": "https://example.com/smart_fitness_tracker.jpg"
+      "image": "https://www.leafstudios.in/cdn/shop/products/Main_a66bce90-71a9-4c4f-9469-078ec70933e0_800x.jpg?v=1673960414"
+    },
+    {
+      "name": "Sony Noise-Canceling Headphones",
+      "price": "249.99",
+      "color": "Silver",
+      "category": "Audio",
+      "description": "Immerse yourself in superior sound quality with these wireless noise-canceling headphones from Sony.",
+      "image": "https://m.media-amazon.com/images/I/51KGPDttQhL._SX522_.jpg",
+      "id": "7b2d"
+    },
+    {
+      "name": "Dell Inspiron 15 Laptop",
+      "price": "799.99",
+      "color": "Silver",
+      "category": "Laptop",
+      "description": "Powerful and versatile laptop with a sleek design, perfect for work or entertainment.",
+      "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/15-3530-intel/media-gallery/black/notebook-inspiron-15-3530-nt-plastic-usbc-data-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=4561&hei=2857&qlt=100,1&resMode=sharp2&size=4561,2857&chrss=full&imwidth=5000",
+      "id": "a1b3"
+    },
+    {
+      "name": "Samsung 55-inch 4K Smart TV",
+      "price": "899.00",
+      "color": "Black",
+      "category": "Electronics",
+      "description": "Experience stunning visuals and smart features with this 55-inch 4K Smart TV from Samsung.",
+      "image": "https://m.media-amazon.com/images/I/71G3w6wIhZL._SX522_.jpg ",
+      "id": "c4d7"
+    },
+    {
+      "name": "Nike Air Max Running Shoes",
+      "price": "129.99",
+      "color": "Blue/White",
+      "category": "Footwear",
+      "description": "Comfortable and stylish running shoes with Air Max technology for superior cushioning and support.",
+      "image": "https://5.imimg.com/data5/JA/WM/MY-61813082/nike-men-s-air-max-running-shoes-500x500.jpg",
+      "id": "e2f8"
+    },
+    {
+      "name": "Canon EOS Rebel T7 DSLR Camera",
+      "price": "549.99",
+      "color": "Black",
+      "category": "Cameras",
+      "description": "Capture high-quality images and videos with this entry-level DSLR camera from Canon.",
+      "image": "https://m.media-amazon.com/images/I/71EWRyqzw0L._AC_SL1500_.jpg",
+      "id": "g5h6"
     }
   ]
 }

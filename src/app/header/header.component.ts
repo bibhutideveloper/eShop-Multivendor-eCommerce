@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,8 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   menuType: string = 'default';
   sellerName: string = '';
-  constructor(private router:Router) { }
+  isBottom: boolean | undefined;
+  constructor(private router:Router, private product:ProductService) { }
 
   ngOnInit(): void {
     this.router.events.subscribe((value: any)=>{
@@ -33,6 +35,22 @@ export class HeaderComponent implements OnInit {
   logOut(){
     localStorage.removeItem('seller')
     this.router.navigate(['/'])
+  }
+
+  searchProducts(query: KeyboardEvent) {
+    if(query){
+      const element = query.target as HTMLInputElement
+      this.product.searchProducts(element.value).subscribe((result)=>{
+        console.warn(result);
+      })
+    }
+  }
+
+  scrolled: boolean = false
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Check the scroll position
+    this.scrolled = window.scrollY >= 30;
   }
 
 }

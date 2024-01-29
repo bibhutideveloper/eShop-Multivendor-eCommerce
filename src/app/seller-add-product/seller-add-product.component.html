@@ -1,13 +1,18 @@
-<div>
-    <form #addProductForm="ngForm" (ngSubmit)="addProduct(addProductForm.value)">
-        <h1>Add Product</h1>
-        <p class="successMsg">{{addProductMsg}}</p>
-        <input type="text" name="name" ngModel placeholder="Enter product name">
-        <input type="text" name="price" ngModel placeholder="Enter product price">
-        <input type="text" name="color" ngModel placeholder="Enter product colour">
-        <input type="text" name="category" ngModel placeholder="Enter product category">
-        <textarea name="description" cols="30" rows="3" ngModel placeholder="Enter product description"></textarea>
-        <input type="text" name="image" ngModel placeholder="Enter image URL">
-        <button type="submit">Add Product</button>
-    </form>
-</div>
+<section>
+    <div class="addProduct">        
+        <form #addProductForm="ngForm" (ngSubmit)="addProduct(addProductForm.value)">
+            <div class="heading heading-center">
+                <h1>Add Product</h1>
+                <hr>
+            </div>
+            <p *ngIf="addProductMsg">{{addProductMsg}}</p>
+            <input type="text" name="name" ngModel placeholder="Enter product name">
+            <input type="text" name="price" ngModel placeholder="Enter product price">
+            <input type="text" name="color" ngModel placeholder="Enter product colour">
+            <input type="text" name="category" ngModel placeholder="Enter product category">
+            <textarea name="description" cols="30" rows="3" ngModel placeholder="Enter product description"></textarea>
+            <input type="text" name="image" ngModel placeholder="Enter image URL">
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+</section>

@@ -1,8 +1,15 @@
 header{
     height: 80px;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    background-color: rgba(244, 169, 255, 0.336);
+    background: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+header.scrolled {
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.577);
 }
 .header{
     display: flex;
@@ -13,40 +20,45 @@ header{
     width: calc(100% - 100px);
     margin: 0 auto;
 }
-.logo{
-
-}
-.logo a{
-    color: black !important;
+.logo h1 a{
+    color: var(--clr-primary);
+    font-size: 30px;
+    font-weight: 600;
 }
 .searchBar{
     display: flex;
     flex-direction: column;
     justify-content: end;
     flex-grow: 1;
-    background: antiquewhite;
+    border: 1px solid var(--clr-primary);
+    border-radius: 5px;
+    
 }
 .searchElements{
     position: relative;
 }
 .searchElements input[type="text"]{
-    width: 100%;
+    width: calc(100% - 10px);
     border: 0;
-    padding: 15px 0;
+    padding: 10px 5px;
+    background: transparent;
 }
 .searchElements button{
     position: absolute;
     right: 0;
-    padding: 15px 40px;
+    padding: 10px 20px;
     border: 0;
+    outline: 0;
+    background: transparent;
 }
 .navMenu{
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 .navMenu ul{
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    margin: 0;
 }
 .navMenu li{
     

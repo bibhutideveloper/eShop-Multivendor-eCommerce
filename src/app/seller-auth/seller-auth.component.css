@@ -1,0 +1,7 @@
+.sellerAuth{
+    min-height: calc(100vh - 270px);
+}
+
+a{
+    display: inline-block;
+}

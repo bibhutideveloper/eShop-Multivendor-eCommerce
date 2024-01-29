@@ -1,0 +1,24 @@
+#shop{
+    padding: 100px 0;  
+}
+.shop{
+    display: flex;
+    gap: 50px;
+    width: calc(100% - 40px);
+    margin: auto;
+}
+.sidebar{
+    width: 320px;
+    padding: 15px;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+.productGrid{
+    width: calc(100% - 350px);
+    padding-right: 50px;
+}
+#shop .productContainer{
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}

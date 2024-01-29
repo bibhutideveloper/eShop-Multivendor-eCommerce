@@ -1,31 +1,50 @@
-<div class="carousel">
-    <ngb-carousel *ngIf="images">
-		<ng-template ngbSlide>
-			<div class="picsum-img-wrapper">
-				<img [src]="images[0]" alt="Random first slide" />
+<section id="landing">
+	<div class="landing">
+		<div class="landingText">
+            <div class="siteTitle">
+				<p>ONLINE STORE</p>
+				<h1>eSHOPY.</h1>
 			</div>
-			<div class="carousel-caption">
-				<h3>First slide label</h3>
-				<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			<p class="desc1">
+				Your go-to destination for a seamless and stylish online shopping experience. Discover, shop, and elevate your lifestyle with us.			</p>
+			<p class="desc2">
+				Discover a world of convenience and style at eShopy, where seamless online shopping meets unbeatable deals.
+			</p>
+			<a class="btn btn-light" routerLink="/shop">Shop Now <i class="fa-solid fa-chevron-right"></i></a>
+		</div>
+		<div class="landingImg">
+			<img src="../../assets/images/2.svg">
+		</div>
+	</div>
+</section>
+
+<section id="popularProducts">
+	<div class="popularProducts">
+		<div class="heading">
+			<h1>Popular Products</h1>
+			<hr>
+		</div>
+		<div class="productContainer">
+			<div class="product" *ngFor="let product of popularProducts">
+				<div class="productImage">
+					<a routerLink="/details/{{product.id}}">
+						<img src="{{product.image}}" alt="">
+					</a>
+				</div>
+				<div class="productInfo">
+					<a routerLink="details/{{product.id}}">
+						<p class="productName">{{product.name}}</p>
+					</a>
+					<p class="productCategory">{{product.category}}</p>
+				</div>
+				<div class="productButtons">
+					<a routerLink="details/{{product.id}}">
+						<button><i class="fa-regular fa-eye"></i></button>
+					</a>
+					<button><i class="fa-solid fa-basket-shopping"></i></button>
+					<button><i class="fa-regular fa-heart"></i></button>
+				</div>
 			</div>
-		</ng-template>
-		<ng-template ngbSlide>
-			<div class="picsum-img-wrapper">
-				<img [src]="images[1]" alt="Random second slide" />
-			</div>
-			<div class="carousel-caption">
-				<h3>Second slide label</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			</div>
-		</ng-template>
-		<ng-template ngbSlide>
-			<div class="picsum-img-wrapper">
-				<img [src]="images[2]" alt="Random third slide" />
-			</div>
-			<div class="carousel-caption">
-				<h3>Third slide label</h3>
-				<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-			</div>
-		</ng-template>
-	</ngb-carousel>
-</div>
+		</div>
+	</div>
+</section>

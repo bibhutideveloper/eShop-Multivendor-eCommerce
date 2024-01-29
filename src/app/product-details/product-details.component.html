@@ -1,0 +1,58 @@
+<section id="singleProduct">
+    <div class="singleProduct" *ngIf="productData">
+        <div class="imageDesc">
+            <div class="singleImage">
+                <img src="{{productData.image}}" alt="product-image">
+            </div>
+            <div class="singleDesc">
+                <p class="productCategory">{{productData.category}}</p>
+                <h1>{{productData.name}}</h1>
+                <h3>
+                    <i class="fa-solid fa-indian-rupee-sign"></i>&nbsp;
+                    {{productData.price}}
+                </h3>
+                <div>
+                    <b>Color:</b>
+                    <p [style.backgroundColor]="productData.color" class="productColor"></p>
+                </div>
+                <span>{{productData.description}}</span>
+
+                <div class="actionButtons">
+                    <button>
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        Add To Cart
+                    </button>
+                    <button>
+                        <i class="fa-regular fa-credit-card"></i>
+                        Buy Now
+                    </button>
+                </div>
+                <div class="quantityGroup">
+                    <button (click)="handleQuantity('-')">-</button>
+                    <input type="text" name="quantity" value="{{productQuantity}}">
+                    <button (click)="handleQuantity('+')">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="related">
+            <div class="heading">
+                <h1>Related Products</h1>
+                <hr>
+            </div>
+            <div class="singleCardGrid">
+                <a class="productCard" href="">                  
+                    <div class="">
+                        <div class="productImage">
+                            <img src="" alt="product-image">
+                        </div>
+                        <div class="productInfo">
+                            <p class="productCtg"></p>
+                            <p class="productTitle"></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

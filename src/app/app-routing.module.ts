@@ -6,6 +6,8 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { AuthGuard } from './auth.guard';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
+import { ShopComponent } from './shop/shop.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
   {
@@ -35,6 +37,16 @@ const routes: Routes = [
     title: 'Update Product',
     component: SellerUpdateProductComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'shop',
+    title: 'Shop',
+    component: ShopComponent
+  },
+  {
+    path: 'details/:productId',
+    title: 'Product Details',
+    component: ProductDetailsComponent
   }
 ];
 

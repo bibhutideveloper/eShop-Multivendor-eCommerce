@@ -1,33 +1,41 @@
-<div>
-    <h1>All Product List</h1>
-    <p class="successMsg">{{productMsg}}</p>
-    <table>
-        <thead>
-            <tr>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Color</th>
-                <th>Category</th>
-                <th>Description</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let item of productList">
-                <td><img src="{{item.image}}" alt="image"></td>
-                <td>{{item.name}}</td>
-                <td>{{item.price}}</td>
-                <td>{{item.color}}</td>
-                <td>{{item.category}}</td>
-                <td>{{item.description}}</td>
-                <td>
-                    <fa-icon [icon]="deleteIcon" (click)="deleteProduct(item.id)"></fa-icon>
-                    <a routerLink="/seller-update-product/{{item.id}}">
-                        <fa-icon [icon]="updateIcon"></fa-icon>
-                    </a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<section>
+    <div class="sellerHome">
+        <div class="heading">
+            <h1>Manage/view All Products</h1>
+            <hr>
+        </div>
+        <p class="successMsg">{{productMsg}}</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Color</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of productList">
+                    <td><img src="{{item.image}}" alt="image"></td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.color}}</td>
+                    <td>{{item.category}}</td>
+                    <td>{{item.description}}</td>
+                    <td>
+                        <span class="tableAction">
+                            <i class="fa-regular fa-trash-can " (click)="deleteProduct(item.id)"></i>
+                            <a routerLink="/seller-update-product/{{item.id}}">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </a>
+                        </span>
+                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

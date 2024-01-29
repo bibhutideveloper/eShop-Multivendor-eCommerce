@@ -1,21 +1,31 @@
-<div *ngIf="!showLogin">
-    <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
-        <h1>Seller Sign Up</h1>
-        <input type="text" name="name" ngModel id="name" placeholder="Enter Name">
-        <input type="email" name="email" ngModel id="email" placeholder="Enter Email">
-        <input type="password" name="password" ngModel id="password" placeholder="Enter password">
-        <button type="submit">Sign Up</button>
-        <p>Already have an account? <a (click)="openLogin()">Login here</a></p>
-    </form>
-</div>
+<section>
+    <div class="sellerAuth">
+        <div *ngIf="!showLogin">
+            <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
+                <div class="heading heading-center">
+                    <h1>Seller Sign Up</h1>
+                    <hr>
+                </div>
+                <input type="text" name="name" ngModel id="name" placeholder="Enter Name">
+                <input type="email" name="email" ngModel id="email" placeholder="Enter Email">
+                <input type="password" name="password" ngModel id="password" placeholder="Enter password">
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a (click)="openLogin()">Login here</a></p>
+            </form>
+        </div>
 
-<div *ngIf="showLogin">
-    <form #sellerLogIn="ngForm" (ngSubmit)="logIn(sellerLogIn.value)">
-        <h1>Seller Log In</h1>
-        <p class="errorMsg">{{authErrorMsg}}</p>
-        <input type="email" name="email" ngModel id="email" placeholder="Enter Email">
-        <input type="password" name="password" ngModel id="password" placeholder="Enter password">
-        <button type="submit">Log In</button>
-        <p>Don't have an account? <a (click)="openSignUp()">Create a new one</a></p>
-    </form>
-</div>
+        <div *ngIf="showLogin">
+            <form #sellerLogIn="ngForm" (ngSubmit)="logIn(sellerLogIn.value)">
+                <div class="heading heading-center">
+                    <h1>Seller Log In</h1>
+                    <hr>
+                </div>
+                <p class="errorMsg">{{authErrorMsg}}</p>
+                <input type="email" name="email" ngModel id="email" placeholder="Enter Email">
+                <input type="password" name="password" ngModel id="password" placeholder="Enter password">
+                <button type="submit">Log In</button>
+                <p>Don't have an account? <a (click)="openSignUp()">Create a new one</a></p>
+            </form>
+        </div>
+    </div>
+</section>
