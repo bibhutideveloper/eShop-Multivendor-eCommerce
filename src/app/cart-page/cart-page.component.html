@@ -1,0 +1,59 @@
+<section id="cart">
+    <div class="heading heading-center">
+        <h1>Your Cart</h1>
+        <hr>
+    </div>
+    <div class="cart">
+        <div class="cartData">
+            <div class="cartItem" *ngFor="let cart of cartData">
+                <div class="productImage">
+                    <a routerLink="/details/{{cart.productId}}">
+                        <img src="{{cart.image}}" alt="">
+                    </a>
+                </div>
+                <div class="productInfo">
+                    <a routerLink="/details/{{cart.productId}}">
+                        <p class="productName">{{cart.name}}</p>
+                    </a>
+                    <p class="productCategory">{{cart.category}}</p>
+                    <div class="priceQty">
+                        <p class="productPrice"><i class="fa-solid fa-indian-rupee-sign"></i> {{cart.price}}</p>
+                        <p class="productQty"><i class="fa-solid fa-xmark"></i> {{cart.quantity}}</p>
+                    </div>
+                </div>
+                <div class="removeCartBtn">
+                    <button>
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="cartBill">
+            <h3>Summary</h3>
+            <br>
+            <table cellspacing=0>
+                <tr>
+                    <th>Amount</th>
+                    <td><i class="fa-solid fa-indian-rupee-sign"></i> {{priceSummary.price | number:'1.2-2'}}</td>
+                </tr>
+                <tr>
+                    <th>Tax</th>
+                    <td><i class="fa-solid fa-indian-rupee-sign"></i> {{priceSummary.tax | number:'1.2-2'}}</td>
+                </tr>
+                <tr>
+                    <th>Delivery</th>
+                    <td><i class="fa-solid fa-indian-rupee-sign"></i> {{priceSummary.delivery}}</td>
+                </tr>
+                <tr>
+                    <th>Discount</th>
+                    <td><i class="fa-solid fa-indian-rupee-sign"></i> {{priceSummary.discount | number:'1.2-2'}}</td>
+                </tr>
+                <tr class="total">
+                    <th>Total</th>
+                    <td><i class="fa-solid fa-indian-rupee-sign"></i> {{priceSummary.total | number:'1.2-2'}}</td>
+                </tr>
+            </table>
+            <button (click)="checkout()" class="checkout"><span><i class="fa-regular fa-credit-card"></i>&emsp;Checkout</span> <i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+    </div>
+</section>

@@ -58,7 +58,8 @@
 }
 
 .productColor{
-    border:3px solid black;
+    /* border:3px solid black; */
+    box-shadow: var(--shadow);
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -87,8 +88,27 @@
 .actionButtons{
     padding-top: 30px;
     display: flex;
-    gap: 5px;
+    gap: 20px;
 }
+button{
+    width: max-content;
+    border: 0;
+}
+.quantityGroup{
+    display: flex;
+}
+.quantityGroup button{
+    width: 40px;
+    height:40px;
+}
+.quantityGroup input[type=text]{
+    width: 20px;
+    height:20px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+}
+
 
 /* related */
 .productImage.servicesImage img{

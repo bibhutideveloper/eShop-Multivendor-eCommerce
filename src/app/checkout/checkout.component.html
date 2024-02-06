@@ -1,0 +1,37 @@
+<section id="checkout">
+    <div class="heading heading-center">
+        <h1>Checkout</h1>
+        <hr>
+    </div>
+    <div class="checkout">        
+        <div class="address">
+            <form #orderData="ngForm" (ngSubmit)="orderNow(orderData.value)">
+                <h1>Shipping Address</h1>
+                <input type="text" ngModel name="name" placeholder="Enter name" />
+                <input type="text" ngModel name="email" placeholder="Enter email" />
+                <input type="text" ngModel name="mobile" placeholder="Enter mobile" />
+                <textarea cols="30" rows="5" ngModel name="address" placeholder="Enter full address"></textarea>
+                <button class="placeorder">
+                    <span>
+                        <i class="fa-solid fa-truck"></i>&emsp;Place Your Order
+                    </span> <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </form>
+        </div>
+        <div class="amount">
+            <span>
+                <p>Amount</p>
+                <h3><i class="fa-solid fa-indian-rupee-sign"></i>{{totalPrice | number:'1.2-2'}}</h3>
+            </span>
+            <span class="payMode">
+                <p><b>Payment Mode</b></p>
+                <span>
+                    <input type="radio" name="pay" id="cash"><label for="cash">Cash</label>
+                </span>
+                <span>
+                    <input type="radio" name="pay" id="online"><label for="online">Online</label>
+                </span>
+            </span>
+        </div>
+    </div>
+</section>

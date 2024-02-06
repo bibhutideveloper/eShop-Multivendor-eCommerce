@@ -5,6 +5,18 @@
       "name": "Bibhuti",
       "email": "bibhuti@gmail.com",
       "password": "123"
+    },
+    {
+      "name": "ajay",
+      "email": "ajay@gmail.com",
+      "password": "123",
+      "id": "PRN6kHX"
+    },
+    {
+      "name": "demo",
+      "email": "demo@gmail.com",
+      "password": "123",
+      "id": "rl0TPBi"
     }
   ],
   "products": [
@@ -88,6 +100,273 @@
       "description": "Capture high-quality images and videos with this entry-level DSLR camera from Canon.",
       "image": "https://m.media-amazon.com/images/I/71EWRyqzw0L._AC_SL1500_.jpg",
       "id": "g5h6"
+    },
+    {
+      "name": "Apple iPhone 13 Pro",
+      "price": "1099.00",
+      "color": "Graphite",
+      "category": "Smartphones",
+      "description": "Experience the power of the latest iPhone with advanced camera features and a stunning ProMotion display.",
+      "image": "https://m.media-amazon.com/images/I/71xb2xkN5qL._SX679_.jpg",
+      "id": "p8q7"
+    },
+    {
+      "name": "Sony PlayStation 5 Console",
+      "price": "499.99",
+      "color": "Black",
+      "category": "Gaming",
+      "description": "Immerse yourself in next-gen gaming with the powerful and sleek PlayStation 5 console.",
+      "image": "https://mx2games.com/wp-content/uploads/2022/03/ps5-digital-edition.jpg",
+      "id": "m3n9"
+    },
+    {
+      "name": "Fitbit Charge 5 Fitness Tracker",
+      "price": "179.95",
+      "color": "Granite",
+      "category": "Wearable Tech",
+      "description": "Track your fitness and health with precision using the advanced Fitbit Charge 5 fitness tracker.",
+      "image": "https://accessworld.in/cdn/shop/products/Fitbit-charge5-black-1.png?v=1642933296&width=800",
+      "id": "r6t5"
+    },
+    {
+      "name": "Amazon Echo Show 10 (3rd Gen)",
+      "price": "249.99",
+      "color": "Charcoal",
+      "category": "Smart Home",
+      "description": "Enjoy a smart display with motion tracking, perfect for video calls, streaming, and controlling your smart home.",
+      "image": "https://m.media-amazon.com/images/I/51iABjSt3BS._SX679_.jpg",
+      "id": "u2v4"
+    },
+    {
+      "name": "Adidas Ultraboost Running Shoes",
+      "price": "169.99",
+      "color": "Solar Red",
+      "category": "Footwear",
+      "description": "Elevate your running experience with the responsive cushioning and stylish design of Adidas Ultraboost shoes.",
+      "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/q/y/j/-original-imagvyrgc8tzr3ga.jpeg?q=70",
+      "id": "w1z0"
+    },
+    {
+      "name": "LG 65-inch OLED 4K Smart TV",
+      "price": "1999.00",
+      "color": "Silver",
+      "category": "Electronics",
+      "description": "Experience cinematic visuals and smart functionality with this LG OLED 4K Smart TV.",
+      "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1702668010/Croma%20Assets/Entertainment/Television/Images/274034_0_zpduce.png?tr=w-640",
+      "id": "k8l6"
+    },
+    {
+      "name": "Bose QuietComfort 45 Wireless Headphones",
+      "price": "349.95",
+      "color": "Triple Black",
+      "category": "Audio",
+      "description": "Immerse yourself in exceptional sound quality and noise cancellation with Bose QuietComfort 45 headphones.",
+      "image": "https://e2zstore.com/wp-content/uploads/2023/06/bose-qc-45-mb.jpg",
+      "id": "b9s3"
+    },
+    {
+      "name": "Dyson V11 Absolute Vacuum Cleaner",
+      "price": "699.99",
+      "color": "Nickel/Blue",
+      "category": "Home Appliances",
+      "description": "Effortlessly clean your home with the powerful suction and intelligent features of the Dyson V11 Absolute.",
+      "image": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/india/2022/nov/primary-blue-sb.png?fmt=png-alpha&scl=1&fmt=png-alpha",
+      "id": "q5r2"
+    },
+    {
+      "name": "Fossil Gen 6 Smartwatch",
+      "price": "299.00",
+      "color": "Rose Gold",
+      "category": "Wearable Tech",
+      "description": "Stay connected and stylish with the Fossil Gen 6 Smartwatch featuring advanced health tracking and customizable dials.",
+      "image": "https://rukminim2.flixcart.com/image/416/416/ku8pbbk0/smartwatch/8/c/7/android-ios-ftw6077-fossil-no-original-imag7egn3uyjqazt.jpeg?q=70&crop=false",
+      "id": "p2w6"
+    },
+    {
+      "name": "Xbox Series X Gaming Console",
+      "price": "499.99",
+      "color": "Black",
+      "category": "Gaming",
+      "description": "Experience next-gen gaming with the powerful Xbox Series X console, featuring high-speed performance and stunning graphics.",
+      "image": "https://m.media-amazon.com/images/I/61-jjE67uqL._SX679_.jpg",
+      "id": "z4x8"
+    }
+  ],
+  "users": [
+    {
+      "name": "ajay",
+      "email": "ajay@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "Bibhuti Kumbhakar",
+      "email": "bibhutikumbhakar9@gmail.com",
+      "password": "123",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "name": "HP Pavilion 8GB DDR4 RAM 512GB SSD",
+      "price": "99000",
+      "color": "black",
+      "category": "laptop",
+      "description": "nice laptop",
+      "image": "https://m.media-amazon.com/images/I/71p-M3sPhhL.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": "e6cf",
+      "id": 1
+    },
+    {
+      "name": "Vintage Automatic",
+      "price": "4999",
+      "color": "Brown",
+      "category": "Luxury Watches",
+      "description": "Handcrafted automatic watch with a genuine leather strap, inspired by vintage designs.",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20211019/TmLn/616de76cf997ddf8f1da2a82/-1117Wx1400H-460901316-black-MODEL.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": "4191",
+      "id": 2
+    },
+    {
+      "name": "Samsung 55-inch 4K Smart TV",
+      "price": "899.00",
+      "color": "Black",
+      "category": "Electronics",
+      "description": "Experience stunning visuals and smart features with this 55-inch 4K Smart TV from Samsung.",
+      "image": "https://m.media-amazon.com/images/I/71G3w6wIhZL._SX522_.jpg ",
+      "quantity": 2,
+      "userId": 2,
+      "productId": "c4d7",
+      "id": 3
+    },
+    {
+      "name": "Canon EOS Rebel T7 DSLR Camera",
+      "price": "549.99",
+      "color": "Black",
+      "category": "Cameras",
+      "description": "Capture high-quality images and videos with this entry-level DSLR camera from Canon.",
+      "image": "https://m.media-amazon.com/images/I/71EWRyqzw0L._AC_SL1500_.jpg",
+      "quantity": 1,
+      "userId": 2,
+      "productId": "g5h6",
+      "id": 4
+    },
+    {
+      "name": "HP Pavilion 8GB DDR4 RAM 512GB SSD",
+      "price": "99000",
+      "color": "black",
+      "category": "laptop",
+      "description": "nice laptop",
+      "image": "https://m.media-amazon.com/images/I/71p-M3sPhhL.jpg",
+      "quantity": 1,
+      "productId": "e6cf",
+      "userId": null,
+      "id": 5
+    },
+    {
+      "name": "Vintage Automatic",
+      "price": "4999",
+      "color": "Brown",
+      "category": "Luxury Watches",
+      "description": "Handcrafted automatic watch with a genuine leather strap, inspired by vintage designs.",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20211019/TmLn/616de76cf997ddf8f1da2a82/-1117Wx1400H-460901316-black-MODEL.jpg",
+      "quantity": 1,
+      "productId": "4191",
+      "userId": null,
+      "id": 6
+    },
+    {
+      "name": "Kids' Cartoon Watch",
+      "price": "300",
+      "color": "Pink",
+      "category": "Children's Watches",
+      "description": "Cute cartoon-themed watch for kids, featuring their favorite characters on the dial.",
+      "image": "https://www.getuscart.com/images/thumbs/0867995_kids-smart-watch-boys-toys-for-3-10-year-old-boy-touch-screen-smartwatch-with-dual-camera-educationa_550.jpeg",
+      "quantity": 1,
+      "userId": 1,
+      "productId": "730b",
+      "id": 7
+    },
+    {
+      "name": "Vintage Automatic",
+      "price": "4999",
+      "color": "Brown",
+      "category": "Luxury Watches",
+      "description": "Handcrafted automatic watch with a genuine leather strap, inspired by vintage designs.",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20211019/TmLn/616de76cf997ddf8f1da2a82/-1117Wx1400H-460901316-black-MODEL.jpg",
+      "quantity": 1,
+      "userId": 1,
+      "productId": "4191",
+      "id": 8
+    },
+    {
+      "name": "Samsung 55-inch 4K Smart TV",
+      "price": "899.00",
+      "color": "Black",
+      "category": "Electronics",
+      "description": "Experience stunning visuals and smart features with this 55-inch 4K Smart TV from Samsung.",
+      "image": "https://m.media-amazon.com/images/I/71G3w6wIhZL._SX522_.jpg ",
+      "quantity": 1,
+      "userId": 1,
+      "productId": "c4d7",
+      "id": 9
+    },
+    {
+      "name": "Dell Inspiron 15 Laptop",
+      "price": "799.99",
+      "color": "Silver",
+      "category": "Laptop",
+      "description": "Powerful and versatile laptop with a sleek design, perfect for work or entertainment.",
+      "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/15-3530-intel/media-gallery/black/notebook-inspiron-15-3530-nt-plastic-usbc-data-black-gallery-4.psd?fmt=pjpg&pscan=auto&scl=1&wid=4561&hei=2857&qlt=100,1&resMode=sharp2&size=4561,2857&chrss=full&imwidth=5000",
+      "quantity": 1,
+      "userId": 1,
+      "productId": "a1b3",
+      "id": 10
+    },
+    {
+      "name": "Vintage Automatic",
+      "price": "4999",
+      "color": "Brown",
+      "category": "Luxury Watches",
+      "description": "Handcrafted automatic watch with a genuine leather strap, inspired by vintage designs.",
+      "image": "https://assets.ajio.com/medias/sys_master/root/20211019/TmLn/616de76cf997ddf8f1da2a82/-1117Wx1400H-460901316-black-MODEL.jpg",
+      "quantity": 1,
+      "userId": 1,
+      "productId": "4191",
+      "id": 11
+    }
+  ],
+  "orders": [
+    {
+      "name": "BIBHUTI KUMBHAKAR",
+      "email": "bibhutikumbhakar@gmail.com",
+      "mobile": "08651996406",
+      "address": "Seraikella, Seraikella\nSeraikella",
+      "totalPrice": 104624.54016666667,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "name": "BIBHUTI KUMBHAKAR",
+      "email": "bibhutikumbhakar@gmail.com",
+      "mobile": "08651996406",
+      "address": "Seraikella, Seraikella\nSeraikella",
+      "totalPrice": 6931.356833333333,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "name": "BIBHUTI KUMBHAKAR",
+      "email": "bibhutikumbhakar@gmail.com",
+      "mobile": "08651996406",
+      "address": "Seraikella, Seraikella\nSeraikella",
+      "totalPrice": 11847.040166666666,
+      "userId": 1,
+      "id": 3
     }
   ]
 }

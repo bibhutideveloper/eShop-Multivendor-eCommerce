@@ -18,9 +18,13 @@
                 <span>{{productData.description}}</span>
 
                 <div class="actionButtons">
-                    <button>
+                    <button (click)="addToCart()" *ngIf="!removeCart">
                         <i class="fa-solid fa-basket-shopping"></i>
                         Add To Cart
+                    </button>
+                    <button (click)="removeFromCart(productData.id)" *ngIf="removeCart">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        Remove From Cart
                     </button>
                     <button>
                         <i class="fa-regular fa-credit-card"></i>

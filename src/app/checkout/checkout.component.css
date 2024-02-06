@@ -1,0 +1,71 @@
+section{
+    padding-top: 100px;
+}
+section>div{
+    padding-top: 0;
+}
+form h1{
+    text-align: left;
+}
+.checkout{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    gap: 70px;
+}
+.amount{
+    margin-top: 80px;
+}
+table{
+    border: 0;
+    font-size: 17px;
+}
+th{
+    text-align: left;
+    font-weight: 400;
+}
+td{
+    text-align: right;
+    font-weight: 600;
+}
+.amount{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: var(--clr-lightbg);
+    height: max-content;
+    padding: 10px 40px 60px 40px;
+    border-radius: 5px;
+}
+.amount>span{
+    display: flex;
+    font-size: 25px;
+    gap: 40px;
+}
+.payMode{
+    flex-direction: column;
+    gap: 10px !important;
+    font-size: 19px !important;
+    margin-top: 20px;
+}
+.payMode>span{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.payMode>span label{
+    width: 100%;
+    cursor: pointer;
+}
+input{
+    width: auto;
+}
+.placeorder{
+    justify-content: space-between;
+    background: var(--clr-primary);
+    color: white;
+}
+.placeorder:hover{
+    color: var(--clr-primary);
+    background: white;
+}

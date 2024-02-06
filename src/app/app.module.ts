@@ -15,6 +15,9 @@ import { SellerUpdateProductComponent } from './seller-update-product/seller-upd
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ShopComponent } from './shop/shop.component';
 import { FooterComponent } from './footer/footer.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { FooterComponent } from './footer/footer.component';
     SellerUpdateProductComponent,
     ProductDetailsComponent,
     ShopComponent,
-    FooterComponent
+    FooterComponent,
+    UserAuthComponent,
+    CartPageComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

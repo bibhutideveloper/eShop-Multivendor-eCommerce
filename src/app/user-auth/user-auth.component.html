@@ -1,0 +1,80 @@
+<section>
+  <div class="sellerAuth">
+    <div *ngIf="!showLogin">
+      <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
+        <div class="heading heading-center">
+          <h1>User Sign Up</h1>
+          <hr />
+        </div>
+        <input
+          type="text"
+          name="name"
+          ngModel
+          id="name"
+          placeholder="Enter Name"
+        />
+        <input
+          type="email"
+          name="email"
+          ngModel
+          id="email"
+          placeholder="Enter Email"
+        />
+        <input
+          type="password"
+          name="password"
+          ngModel
+          id="password"
+          placeholder="Enter password"
+        />
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a (click)="openLogIn()">Login here</a></p>
+      </form>
+    </div>
+
+    <div *ngIf="showLogin">
+      <form #userLogInForm="ngForm" (ngSubmit)="logIn(userLogInForm.value)">
+        <div class="heading heading-center">
+          <h1>User Log In</h1>
+          <hr />
+        </div>
+        <p class="errorMsg">{{authErrorMsg}}</p>
+        <div class="formGroup">
+          <input
+            type="email"
+            name="email"
+            ngModel
+            id="email"
+            placeholder="Enter Email"
+            #email="ngModel"
+            email
+            required
+          />
+          <p class="errorMsg" *ngIf="email.invalid && email.touched">
+            Enter valid email !
+          </p>
+        </div>
+        <div class="formGroup">
+          <input
+            type="password"
+            name="password"
+            ngModel
+            id="password"
+            placeholder="Enter password"
+            #password="ngModel"
+            minlength="2"
+            maxlength="20"
+            required
+          />
+          <p class="errorMsg" *ngIf="password.invalid && password.touched">
+            Enter password ! range: 2-20
+          </p>
+        </div>
+        <button [disabled]="userLogInForm.invalid" type="submit">Log In</button>
+        <p>
+          Don't have an account? <a (click)="openSignUp()">Create a new one</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

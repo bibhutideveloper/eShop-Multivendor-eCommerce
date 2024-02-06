@@ -34,6 +34,10 @@ html{
     --shadow: 0 5px 10px rgb(154 160 185 / 50%), 0 15px 40px rgb(166 173 201 / 50%);
 }
 
+:disabled{
+    cursor: not-allowed;
+}
+
 section{
     width: 100%;
     padding: 50px 0;
@@ -52,6 +56,8 @@ a{
     display: flex;
     gap: 10px;
     align-items: center;
+    color: var(--clr-primary);
+    cursor: pointer;
 }
 a:hover{
     color: var(--clr-secondary);
@@ -78,15 +84,21 @@ form{
 
 form p{
     font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 form p a{
     cursor: pointer;
     color: rgb(142, 22, 175);
 }
 
-input, button, textarea{
+input, textarea{
     padding: 10px;
     outline: 0;
+    width: calc(100% - 20px);
+    border-radius: 5px;
+    border: 1px solid var(--clr-primary);
 }
 
 input::-webkit-outer-spin-button,
@@ -103,13 +115,16 @@ table{
 }
 
 button{
+    width: 100%;
     cursor: pointer;
     font-size: 15px;
-    border: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding: 10px;
+    border:1px solid var(--clr-primary);
+    border-radius: 5px;
 }
 .btn{
     padding: 10px 15px;
