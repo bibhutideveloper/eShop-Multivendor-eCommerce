@@ -1,3 +1,22 @@
+### Landing Page
+![screencapture-localhost-4200-2024-02-16-09_41_17](https://github.com/bibhutideveloper/eShop-Multivendor-eCommerce/assets/105565422/4e581ed4-149d-4764-a43a-82a36f9685f3)
+
+### Shop Page
+![screencapture-localhost-4200-shop-2024-02-16-09_42_34](https://github.com/bibhutideveloper/eShop-Multivendor-eCommerce/assets/105565422/6bf73bad-3621-4e54-a8a5-91d65e6adb52)
+
+### Single Product
+![screencapture-localhost-4200-details-c4d7-2024-02-16-09_43_09](https://github.com/bibhutideveloper/eShop-Multivendor-eCommerce/assets/105565422/ce51ded0-7412-4af9-8026-e42205fc4b01)
+
+### Cart
+![screencapture-localhost-4200-cart-2024-02-16-09_44_04](https://github.com/bibhutideveloper/eShop-Multivendor-eCommerce/assets/105565422/2c5d8d32-7f70-4cc3-af2c-707d19ee0e16)
+
+### Checkout
+![screencapture-localhost-4200-checkout-2024-02-16-09_44_17](https://github.com/bibhutideveloper/eShop-Multivendor-eCommerce/assets/105565422/a3849b1d-6a73-4298-9fb4-2bd06673bec7)
+
+### Login
+![Uploading screencapture-localhost-4200-user-auth-2024-02-16-09_44_57.png…]()
+
+
 # EShop
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
